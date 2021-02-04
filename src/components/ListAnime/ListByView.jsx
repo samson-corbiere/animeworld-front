@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
+import "../style/ListByView.css"
 
 function ListByView() {
   const [listByView, setListByView] = useState([]);
@@ -15,9 +16,9 @@ function ListByView() {
     <div>
       <h1>Les plus regardés : </h1>
       {listByView.map(anime => (
-        <div>
+        <div className="ListByView-cardAnime">
           <p>{anime.name}</p>
-          <img src={anime.image}/>
+          <img src={anime.image} className="ListByView-image" alt={anime.name}/>
         </div>
       ))}
     </div>
