@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
 import "../style/ListByView.css"
+import { Link } from "react-router-dom";
 
 function ListByView() {
   const [listByView, setListByView] = useState([]);
@@ -16,10 +17,12 @@ function ListByView() {
     <div>
       <h1>Les plus regardés : </h1>
       {listByView.map(anime => (
-        <div className="ListByView-cardAnime">
-          <p>{anime.name}</p>
-          <img src={anime.image} className="ListByView-image" alt={anime.name}/>
-        </div>
+        <Link to={`/pageAnime/${anime.id}`}>
+          <div className="ListByView-cardAnime">
+            <p>{anime.name}</p>
+            <img src={anime.image} className="ListByView-image" alt={anime.name}/>
+          </div>
+        </Link>
       ))}
     </div>
   )
