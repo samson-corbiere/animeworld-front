@@ -1,0 +1,20 @@
+.AllNavbar {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  background-color: #F5F5F5;
+}
+
+.NavbarIconHome {
+  width: 100px;
+  height: 100px;
+}
+
+.NavbarIconFavourite {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
