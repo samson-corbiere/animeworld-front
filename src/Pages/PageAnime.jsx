@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
 import { useParams } from "react-router-dom";
+import iconHome from "../img/home_icon.png";
+import { Link } from "react-router-dom";
 
 function PageAnime() {
   const [FindPageAnime, setFindPageAnime] = useState([])
@@ -15,6 +17,9 @@ function PageAnime() {
   }, [id])
   return (
     <div>
+      <Link to="/">
+        <img src={iconHome} alt="iconHome"/>
+      </Link>
       {FindPageAnime.map(anime => (
         <div>
           <img src={anime.image} alt={anime.name}/>
