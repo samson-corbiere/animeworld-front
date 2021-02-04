@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
+import "../style/HomePageCard.css"
+import { Link } from "react-router-dom";
 
 function ListAnimeNovelty() {
   const [listAnimeNovelty, setListAnimeNovelty] = useState([]);
@@ -15,10 +17,12 @@ function ListAnimeNovelty() {
     <div>
       <h1>Les dernières nouveautés : </h1>
       {listAnimeNovelty.map(anime => (
-        <div>
+        <Link to={`/pageAnime/${anime.id}`}>
+        <div className="HomePageCardAnime">
           <p>{anime.name}</p>
-          <img src={anime.image}/>
+          <img src={anime.image} className="HomePageImage" alt={anime.name}/>
         </div>
+      </Link>
       ))}
     </div>
   )

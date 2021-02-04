@@ -5,11 +5,13 @@ import ListByView from "../components/ListAnime/ListByView";
 import ListActionGenre from "../components/ListAnime/ListActionGenre";
 import ListComicGenre from "../components/ListAnime/ListComicGenre";
 import ListAnimeNovelty from "../components/ListAnime/ListAnimeNovelty";
+import Navbar from "../components/Navbar";
 
 function HomePage() {
 
   return (
     <div>
+      <Navbar />
       <ListByView />
       <ListActionGenre /> 
       <ListComicGenre />

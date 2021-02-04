@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
+import "../style/HomePageCard.css"
+import { Link } from "react-router-dom";
 
 function ListByView() {
   const [listByView, setListByView] = useState([]);
@@ -15,10 +17,12 @@ function ListByView() {
     <div>
       <h1>Les plus regardés : </h1>
       {listByView.map(anime => (
-        <div>
-          <p>{anime.name}</p>
-          <img src={anime.image}/>
-        </div>
+        <Link to={`/pageAnime/${anime.id}`}>
+          <div className="HomePageCardAnime">
+            <p>{anime.name}</p>
+            <img src={anime.image} className="HomePageImage" alt={anime.name}/>
+          </div>
+        </Link>
       ))}
     </div>
   )

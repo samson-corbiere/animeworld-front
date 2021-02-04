@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
+import "../style/HomePageCard.css"
+import { Link } from "react-router-dom";
 
 function ListComicGenre() {
   const [listComicGenre, setListComicGenre] = useState([]);
@@ -15,10 +17,12 @@ function ListComicGenre() {
     <div>
       <h1>Pour ce qui aime la comédie : </h1>
       {listComicGenre.map(anime => (
-        <div>
-          <p>{anime.name}</p>
-          <img src={anime.image}/>
-        </div>
+        <Link to={`/pageAnime/${anime.id}`}>
+          <div className="HomePageCardAnime">
+            <p>{anime.name}</p>
+            <img src={anime.image} className="HomePageImage" alt={anime.name}/>
+          </div>
+        </Link>
       ))}
     </div>
   )
