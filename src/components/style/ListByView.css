@@ -1,0 +1,10 @@
+.ListByView-cardAnime {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ListByView-image {
+  width: 80%;
+}
