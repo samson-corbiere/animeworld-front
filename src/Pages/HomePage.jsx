@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios"
+import ListAllAnime from "../components/ListAnime/ListAllAnime";
+import ListByView from "../components/ListAnime/ListByView";
+import ListActionGenre from "../components/ListAnime/ListActionGenre";
+import ListComicGenre from "../components/ListAnime/ListComicGenre";
 
-function homePage() {
+function HomePage() {
+
   return (
     <div>
-      salut
+      <ListAllAnime />
+      <ListByView />
+      <ListActionGenre /> 
+      <ListComicGenre />
     </div>    
   )
 }
 
-export default homePage;
+export default HomePage;
