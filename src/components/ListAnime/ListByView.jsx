@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
-import "../style/ListByView.css"
+import "../style/HomePageCard.css"
 import { Link } from "react-router-dom";
 
 function ListByView() {
@@ -18,9 +18,9 @@ function ListByView() {
       <h1>Les plus regardés : </h1>
       {listByView.map(anime => (
         <Link to={`/pageAnime/${anime.id}`}>
-          <div className="ListByView-cardAnime">
+          <div className="HomePageCardAnime">
             <p>{anime.name}</p>
-            <img src={anime.image} className="ListByView-image" alt={anime.name}/>
+            <img src={anime.image} className="HomePageImage" alt={anime.name}/>
           </div>
         </Link>
       ))}
