@@ -13,6 +13,7 @@ function ListComicGenre() {
 
   return (
     <div>
+      <h1>Pour ce qui aime la comédie : </h1>
       {listComicGenre.map(anime => (
         <div>
           <p>{anime.name}</p>

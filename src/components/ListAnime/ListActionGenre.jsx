@@ -13,6 +13,7 @@ function ListActionGenre() {
 
   return (
     <div>
+      <h1>Pour ce qui aime l'action : </h1>
       {listActionGenre.map(anime => (
         <div>
           <p>{anime.name}</p>

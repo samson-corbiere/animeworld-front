@@ -13,7 +13,7 @@ function ListByView() {
 
   return (
     <div>
-      <h1>list by view</h1>
+      <h1>Les plus regardés : </h1>
       {listByView.map(anime => (
         <div>
           <p>{anime.name}</p>
