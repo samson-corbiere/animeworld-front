@@ -20,9 +20,12 @@ function PageAnime() {
       <Navbar />
       {FindPageAnime.map(anime => (
         <div className="PageAnime-boxContainer">
-          <img src={anime.image} alt={anime.name} className="PageAnime-image"/>
-            <p>{anime.name}</p>
-            <div>
+          <div>
+            <img src={anime.image} alt={anime.name} className="PageAnime-image"/>
+            <p className="PageAnime-titleAnime">{anime.name}</p>
+          </div>
+          
+          <div className="PageAnime-text">
             <p>{anime.author}</p>
             <p>Date de sortie : {anime.start_date}</p>
             <p>Synopsis</p>

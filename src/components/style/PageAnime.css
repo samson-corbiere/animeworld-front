@@ -31,6 +31,7 @@
   
   .PageAnime-image {
     width: 100%;
+    position: relative;
     justify-content: center;
     display: flex;
     margin-left: auto;
@@ -38,12 +39,25 @@
     height: 20em;
     object-fit: cover;
     object-position: top;
+  
   }
+  .PageAnime-titleAnime {
+    position: absolute;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-left: 15%;
+    top: 13em;
+  }
+
   .PageAnime-text {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+
+
 }
 
 
