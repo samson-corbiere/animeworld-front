@@ -16,14 +16,16 @@ function ListByView() {
   return (
     <div>
       <h1>Les plus regardés : </h1>
-      {listByView.map(anime => (
-        <Link to={`/pageAnime/${anime.id}`}>
-          <div className="HomePageCardAnime">
-            <p>{anime.name}</p>
-            <img src={anime.image} className="HomePageImage" alt={anime.name}/>
-          </div>
-        </Link>
-      ))}
+      <div>
+        {listByView.map(anime => (
+          <Link to={`/pageAnime/${anime.id}`}>
+            <div className="HomePageCardAnime">
+              <p>{anime.name}</p>
+              <img src={anime.image} className="HomePageImage" alt={anime.name}/>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }

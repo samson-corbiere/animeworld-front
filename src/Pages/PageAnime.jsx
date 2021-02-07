@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios"
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import "../components/style/PageAnime.css";
 
 function PageAnime() {
   const [FindPageAnime, setFindPageAnime] = useState([])
@@ -18,14 +19,16 @@ function PageAnime() {
     <div>
       <Navbar />
       {FindPageAnime.map(anime => (
-        <div>
-          <img src={anime.image} alt={anime.name}/>
-          <p>{anime.name}</p>
-          <p>{anime.author}</p>
-          <p>Date de sortie : {anime.start_date}</p>
-          <p>Synopsis</p>
-          <p>{anime.description}</p>
-          <p>Genre : {anime.genre}</p>
+        <div className="PageAnime-boxContainer">
+          <img src={anime.image} alt={anime.name} className="PageAnime-image"/>
+            <p>{anime.name}</p>
+            <div>
+            <p>{anime.author}</p>
+            <p>Date de sortie : {anime.start_date}</p>
+            <p>Synopsis</p>
+            <p>{anime.description}</p>
+            <p>Genre : {anime.genre}</p>
+          </div>
         </div>
       ))}
     </div>    
