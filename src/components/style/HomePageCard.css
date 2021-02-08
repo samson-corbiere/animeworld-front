@@ -1,10 +1,31 @@
 .HomePageCardAnime {
-  width: 100%;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .HomePageImage {
-  width: 80%;
+  width: 250px;
+  height: 300px;
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+.HomePageAllCardAnime {
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  white-space: nowrap;
+  list-style-type: none;
+  padding-left: 20px; 
+  flex-wrap: nowrap;
+  /* justify-items: center; */
+}
+
+.HomePageNameSection {
+  padding-left: 30px;
 }

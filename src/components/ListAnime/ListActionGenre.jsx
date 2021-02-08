@@ -15,8 +15,8 @@ function ListActionGenre() {
 
   return (
     <div>
-      <h1>Pour ce qui aime l'action : </h1>
-      <div>
+      <h1 className="HomePageNameSection">Pour ce qui aime l'action : </h1>
+      <div className="HomePageAllCardAnime">
         {listActionGenre.map(anime => (
           <Link to={`/pageAnime/${anime.id}`}>
           <div className="HomePageCardAnime">

@@ -15,8 +15,8 @@ function ListComicGenre() {
 
   return (
     <div>
-      <h1>Pour ce qui aime la comédie : </h1>
-      <div>
+      <h1 className="HomePageNameSection">Pour ce qui aime la comédie : </h1>
+      <div className="HomePageAllCardAnime">
         {listComicGenre.map(anime => (
           <Link to={`/pageAnime/${anime.id}`}>
             <div className="HomePageCardAnime">

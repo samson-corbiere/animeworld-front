@@ -15,8 +15,8 @@ function ListByView() {
 
   return (
     <div>
-      <h1>Les plus regardés : </h1>
-      <div>
+      <h1 className="HomePageNameSection">Les plus regardés : </h1>
+      <div className="HomePageAllCardAnime">
         {listByView.map(anime => (
           <Link to={`/pageAnime/${anime.id}`}>
             <div className="HomePageCardAnime">
