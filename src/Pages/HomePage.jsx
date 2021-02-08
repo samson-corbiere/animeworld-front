@@ -10,7 +10,7 @@ import Navbar from "../components/Navbar";
 function HomePage() {
 
   return (
-    <div>
+    <div className="HomePageGlobalDiv">
       <Navbar />
       <ListByView />
       <ListActionGenre /> 

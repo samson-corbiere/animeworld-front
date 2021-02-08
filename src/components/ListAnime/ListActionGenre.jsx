@@ -15,15 +15,17 @@ function ListActionGenre() {
 
   return (
     <div>
-      <h1>Pour ce qui aime l'action : </h1>
-      {listActionGenre.map(anime => (
-        <Link to={`/pageAnime/${anime.id}`}>
-        <div className="HomePageCardAnime">
-          <p>{anime.name}</p>
-          <img src={anime.image} className="HomePageImage" alt={anime.name}/>
-        </div>
-      </Link>
-      ))}
+      <h1 className="HomePageNameSection">Pour ce qui aime l'action : </h1>
+      <div className="HomePageAllCardAnime">
+        {listActionGenre.map(anime => (
+          <Link to={`/pageAnime/${anime.id}`}>
+          <div className="HomePageCardAnime">
+            <p>{anime.name}</p>
+            <img src={anime.image} className="HomePageImage" alt={anime.name}/>
+          </div>
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }
