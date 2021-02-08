@@ -26,10 +26,10 @@ function PageAnime() {
           </div>
           
           <div className="PageAnime-text">
-            <p>{anime.author}</p>
+            <p>Auteur : {anime.author}</p>
             <p>Date de sortie : {anime.start_date}</p>
-            <p>Synopsis</p>
-            <p>{anime.description}</p>
+            <p>Synopsis : </p>
+            <p className="PageAnime-description">{anime.description}</p>
             <p>Genre : {anime.genre}</p>
           </div>
         </div>
