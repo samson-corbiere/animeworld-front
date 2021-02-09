@@ -3,6 +3,7 @@ import axios from "axios"
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import "../components/style/PageAnime.css";
+import ActorPageAnime from "../components/ActorPageAnime";
 
 function PageAnime() {
   const [FindPageAnime, setFindPageAnime] = useState([])
@@ -15,6 +16,8 @@ function PageAnime() {
       .then((res) => res.data)
       .then((data) => setFindPageAnime(data)) 
   }, [id])
+
+  
   return (
     <div>
       <Navbar />
@@ -34,6 +37,7 @@ function PageAnime() {
           </div>
         </div>
       ))}
+      <ActorPageAnime />
     </div>    
   )
 }
