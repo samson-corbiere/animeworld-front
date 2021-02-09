@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./style/HomePageCard.css"
 import { Link } from "react-router-dom";
+import "./style/searchBar.css";
 
 function SearchBar() {
   const [allAnime, setAllAnime] = useState([])
@@ -27,9 +28,11 @@ function SearchBar() {
 
   return (
     <div>
-      <div>
+      <div className="searchBar-searchBox">
         <input
+          className="searchBar-searchbarInput"
           type="text"
+          placeholder="Search an anime"
           onChange={(e) => setSpecificAnime(e.target.value)}
         />
       </div>
