@@ -6,12 +6,14 @@ import ListActionGenre from "../components/ListAnime/ListActionGenre";
 import ListComicGenre from "../components/ListAnime/ListComicGenre";
 import ListAnimeNovelty from "../components/ListAnime/ListAnimeNovelty";
 import Navbar from "../components/Navbar";
+import SearchBar from "../components/SearchBar";
 
 function HomePage() {
 
   return (
     <div className="HomePageGlobalDiv">
       <Navbar />
+      <SearchBar />
       <ListByView />
       <ListActionGenre /> 
       <ListComicGenre />
