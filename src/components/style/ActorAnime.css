@@ -1,0 +1,27 @@
+.PageAnime-AllActor {
+  display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    white-space: nowrap;
+    list-style-type: none;
+    padding-left: 20px;
+    flex-wrap: nowrap;
+
+}
+
+.PageAnime-imageActor {
+  width: 300px;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20em;
+  object-fit: cover;
+  object-position: top;
+  padding-left: 15px;
+}
+
+.PageAnime-NameActor {
+  display: flex;
+  justify-content: center;
+}
